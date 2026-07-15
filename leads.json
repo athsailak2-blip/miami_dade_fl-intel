@@ -3943,6 +3943,29 @@
         "owner_name": "",
         "enrichment_status": "PARTY_NATIVE",
         "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
+      },
+      {
+        "source": "miami_dade_clerk_official_records",
+        "source_id": "2026R478073",
+        "county": "Miami-Dade",
+        "state": "FL",
+        "lead_type": "certificate_cer",
+        "is_distress": false,
+        "document_type": "CERTIFICATE - CER",
+        "recorded_date": "7/14/2026",
+        "rec_book_page": "35396/3478",
+        "plat_book_page": "",
+        "legal_description": "",
+        "block_number": "",
+        "misc_ref": "",
+        "folio": "",
+        "party_name": "NELSON ALVAREZ REVOCABLE TRUST / ALVAREZ NELSON",
+        "grantor": "NELSON ALVAREZ REVOCABLE TRUST",
+        "grantee": "ALVAREZ NELSON",
+        "street_address": "",
+        "owner_name": "",
+        "enrichment_status": "PARTY_NATIVE",
+        "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
       }
     ],
     "certificate_of_title_cti": [
@@ -7835,6 +7858,29 @@
         "folio": "",
         "party_name": "GREENE TAVARIS DEWAND / STATE OF FLORIDA",
         "grantor": "GREENE TAVARIS DEWAND",
+        "grantee": "STATE OF FLORIDA",
+        "street_address": "",
+        "owner_name": "",
+        "enrichment_status": "PARTY_NATIVE",
+        "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
+      },
+      {
+        "source": "miami_dade_clerk_official_records",
+        "source_id": "2026R461893",
+        "county": "Miami-Dade",
+        "state": "FL",
+        "lead_type": "criminal_court_paper_ccp",
+        "is_distress": false,
+        "document_type": "CRIMINAL COURT PAPER - CCP",
+        "recorded_date": "7/8/2026",
+        "rec_book_page": "35386/1569",
+        "plat_book_page": "",
+        "legal_description": "",
+        "block_number": "",
+        "misc_ref": "F25023181B 149",
+        "folio": "",
+        "party_name": "NELSON TRAVIS DENIQUIN / STATE OF FLORIDA",
+        "grantor": "NELSON TRAVIS DENIQUIN",
         "grantee": "STATE OF FLORIDA",
         "street_address": "",
         "owner_name": "",
@@ -29441,11 +29487,11 @@
       "status"
     ]
   ],
-  "total": 3291,
+  "total": 3301,
   "distress": 185,
   "enriched": 0,
   "address_complete_pct": 14.2,
-  "owner_or_party_pct": 81.1,
+  "owner_or_party_pct": 81.2,
   "window_note": "7-day rolling window; data sourced via TinyFish + PA ArcGIS",
-  "generated_at": "2026-07-15T00:35:00.821648"
+  "generated_at": "2026-07-15T00:35:22.417390"
 }

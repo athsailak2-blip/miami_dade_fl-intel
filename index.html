@@ -55,12 +55,12 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <button class="chip" data-type="articles_of_incorporation_ain"><span class="ct">3</span> Articles Of Incorporation Ain</button>
 <button class="chip" data-type="assignment"><span class="ct">10</span> Assignment</button>
 <button class="chip" data-type="bankruptcy"><span class="ct">1</span> Bankruptcy</button>
-<button class="chip" data-type="certificate_cer"><span class="ct">2</span> Certificate Cer</button>
+<button class="chip" data-type="certificate_cer"><span class="ct">3</span> Certificate Cer</button>
 <button class="chip" data-type="certificate_of_title_cti"><span class="ct">1</span> Certificate Of Title Cti</button>
 <button class="chip" data-type="consent_con"><span class="ct">1</span> Consent Con</button>
 <button class="chip" data-type="construction_notice"><span class="ct">84</span> Construction Notice</button>
 <button class="chip" data-type="court_order"><span class="ct">3</span> Court Order</button>
-<button class="chip" data-type="criminal_court_paper_ccp"><span class="ct">80</span> Criminal Court Paper Ccp</button>
+<button class="chip" data-type="criminal_court_paper_ccp"><span class="ct">81</span> Criminal Court Paper Ccp</button>
 <button class="chip" data-type="dade_court_paper_dcp"><span class="ct">100</span> Dade Court Paper Dcp</button>
 <button class="chip" data-type="death_certificate_(est_of)_dce"><span class="ct">17</span> Death Certificate (Est Of) Dce</button>
 <button class="chip" data-type="declaration_of_residence_dor"><span class="ct">7</span> Declaration Of Residence Dor</button>
@@ -126,7 +126,7 @@ function render(type){
   $('#loading').style.display='none';
 }
 
-fetch('leads.json?b=1784075701').then(r=>r.json()).then(d=>{
+fetch('leads.json?b=1784075722').then(r=>r.json()).then(d=>{
   DATA=d;
   $('#kpi-total').textContent=d.total;
   $('#kpi-distress').textContent=d.distress;
