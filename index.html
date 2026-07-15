@@ -58,9 +58,9 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <button class="chip" data-type="certificate_cer"><span class="ct">2</span> Certificate Cer</button>
 <button class="chip" data-type="certificate_of_title_cti"><span class="ct">1</span> Certificate Of Title Cti</button>
 <button class="chip" data-type="consent_con"><span class="ct">1</span> Consent Con</button>
-<button class="chip" data-type="construction_notice"><span class="ct">80</span> Construction Notice</button>
+<button class="chip" data-type="construction_notice"><span class="ct">81</span> Construction Notice</button>
 <button class="chip" data-type="court_order"><span class="ct">3</span> Court Order</button>
-<button class="chip" data-type="criminal_court_paper_ccp"><span class="ct">71</span> Criminal Court Paper Ccp</button>
+<button class="chip" data-type="criminal_court_paper_ccp"><span class="ct">74</span> Criminal Court Paper Ccp</button>
 <button class="chip" data-type="dade_court_paper_dcp"><span class="ct">100</span> Dade Court Paper Dcp</button>
 <button class="chip" data-type="death_certificate_(est_of)_dce"><span class="ct">15</span> Death Certificate (Est Of) Dce</button>
 <button class="chip" data-type="declaration_of_residence_dor"><span class="ct">5</span> Declaration Of Residence Dor</button>
@@ -68,7 +68,7 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <button class="chip" data-type="divorce"><span class="ct">1</span> Divorce</button>
 <button class="chip" data-type="easement_eas"><span class="ct">5</span> Easement Eas</button>
 <button class="chip" data-type="judgment"><span class="ct">21</span> Judgment</button>
-<button class="chip" data-type="judgment_satisfaction"><span class="ct">18</span> Judgment Satisfaction</button>
+<button class="chip" data-type="judgment_satisfaction"><span class="ct">19</span> Judgment Satisfaction</button>
 <button class="chip" data-type="lis_pendens"><span class="ct">20</span> Lis Pendens</button>
 <button class="chip" data-type="mortgage"><span class="ct">100</span> Mortgage</button>
 <button class="chip" data-type="mortgage_assignment"><span class="ct">59</span> Mortgage Assignment</button>
@@ -126,7 +126,7 @@ function render(type){
   $('#loading').style.display='none';
 }
 
-fetch('leads.json?b=1784075383').then(r=>r.json()).then(d=>{
+fetch('leads.json?b=1784075441').then(r=>r.json()).then(d=>{
   DATA=d;
   $('#kpi-total').textContent=d.total;
   $('#kpi-distress').textContent=d.distress;
