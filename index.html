@@ -51,7 +51,7 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <div class="chips" id="chips">
 <button class="chip active" data-type="__all">All</button>
 <button class="chip" data-type="affidavit"><span class="ct">100</span> Affidavit</button>
-<button class="chip" data-type="agreement"><span class="ct">55</span> Agreement</button>
+<button class="chip" data-type="agreement"><span class="ct">56</span> Agreement</button>
 <button class="chip" data-type="articles_of_incorporation_ain"><span class="ct">3</span> Articles Of Incorporation Ain</button>
 <button class="chip" data-type="assignment"><span class="ct">10</span> Assignment</button>
 <button class="chip" data-type="bankruptcy"><span class="ct">1</span> Bankruptcy</button>
@@ -63,15 +63,15 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <button class="chip" data-type="criminal_court_paper_ccp"><span class="ct">81</span> Criminal Court Paper Ccp</button>
 <button class="chip" data-type="dade_court_paper_dcp"><span class="ct">100</span> Dade Court Paper Dcp</button>
 <button class="chip" data-type="death_certificate_(est_of)_dce"><span class="ct">17</span> Death Certificate (Est Of) Dce</button>
-<button class="chip" data-type="declaration_of_residence_dor"><span class="ct">7</span> Declaration Of Residence Dor</button>
+<button class="chip" data-type="declaration_of_residence_dor"><span class="ct">9</span> Declaration Of Residence Dor</button>
 <button class="chip" data-type="deed"><span class="ct">100</span> Deed</button>
 <button class="chip" data-type="divorce"><span class="ct">1</span> Divorce</button>
 <button class="chip" data-type="easement_eas"><span class="ct">7</span> Easement Eas</button>
 <button class="chip" data-type="judgment"><span class="ct">26</span> Judgment</button>
 <button class="chip" data-type="judgment_satisfaction"><span class="ct">22</span> Judgment Satisfaction</button>
-<button class="chip" data-type="lis_pendens"><span class="ct">24</span> Lis Pendens</button>
+<button class="chip" data-type="lis_pendens"><span class="ct">27</span> Lis Pendens</button>
 <button class="chip" data-type="mortgage"><span class="ct">100</span> Mortgage</button>
-<button class="chip" data-type="mortgage_assignment"><span class="ct">60</span> Mortgage Assignment</button>
+<button class="chip" data-type="mortgage_assignment"><span class="ct">63</span> Mortgage Assignment</button>
 <button class="chip" data-type="mortgage_satisfaction"><span class="ct">100</span> Mortgage Satisfaction</button>
 <button class="chip" data-type="notice_not"><span class="ct">25</span> Notice Not</button>
 <button class="chip" data-type="power_of_attorney_pay"><span class="ct">10</span> Power Of Attorney Pay</button>
@@ -79,7 +79,7 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <button class="chip" data-type="release"><span class="ct">100</span> Release</button>
 <button class="chip" data-type="tax_lien"><span class="ct">100</span> Tax Lien</button>
 <button class="chip" data-type="traffic_court_paper_tcp"><span class="ct">8</span> Traffic Court Paper Tcp</button>
-<button class="chip" data-type="ucc_filing"><span class="ct">7</span> Ucc Filing</button>
+<button class="chip" data-type="ucc_filing"><span class="ct">8</span> Ucc Filing</button>
 </div>
 <div class="wrap" id="tablewrap">
 <div id="loading">Loading leads…</div>
@@ -126,7 +126,7 @@ function render(type){
   $('#loading').style.display='none';
 }
 
-fetch('leads.json?b=1784075764').then(r=>r.json()).then(d=>{
+fetch('leads.json?b=1784075816').then(r=>r.json()).then(d=>{
   DATA=d;
   $('#kpi-total').textContent=d.total;
   $('#kpi-distress').textContent=d.distress;
