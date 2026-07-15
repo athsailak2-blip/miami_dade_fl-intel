@@ -126,7 +126,7 @@ function render(type){
   $('#loading').style.display='none';
 }
 
-fetch('leads.json?b=1784077032').then(r=>r.json()).then(d=>{
+fetch('leads.json?b=1784077034').then(r=>r.json()).then(d=>{
   DATA=d;
   $('#kpi-total').textContent=d.total;
   $('#kpi-distress').textContent=d.distress;
