@@ -67,16 +67,16 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <button class="chip" data-type="deed"><span class="ct">100</span> Deed</button>
 <button class="chip" data-type="divorce"><span class="ct">1</span> Divorce</button>
 <button class="chip" data-type="easement_eas"><span class="ct">5</span> Easement Eas</button>
-<button class="chip" data-type="judgment"><span class="ct">20</span> Judgment</button>
+<button class="chip" data-type="judgment"><span class="ct">21</span> Judgment</button>
 <button class="chip" data-type="judgment_satisfaction"><span class="ct">18</span> Judgment Satisfaction</button>
 <button class="chip" data-type="lis_pendens"><span class="ct">20</span> Lis Pendens</button>
 <button class="chip" data-type="mortgage"><span class="ct">100</span> Mortgage</button>
-<button class="chip" data-type="mortgage_assignment"><span class="ct">58</span> Mortgage Assignment</button>
+<button class="chip" data-type="mortgage_assignment"><span class="ct">59</span> Mortgage Assignment</button>
 <button class="chip" data-type="mortgage_satisfaction"><span class="ct">100</span> Mortgage Satisfaction</button>
-<button class="chip" data-type="notice_not"><span class="ct">21</span> Notice Not</button>
+<button class="chip" data-type="notice_not"><span class="ct">22</span> Notice Not</button>
 <button class="chip" data-type="power_of_attorney_pay"><span class="ct">9</span> Power Of Attorney Pay</button>
 <button class="chip" data-type="recent_parcel_change"><span class="ct">100</span> Recent Parcel Change</button>
-<button class="chip" data-type="release"><span class="ct">77</span> Release</button>
+<button class="chip" data-type="release"><span class="ct">80</span> Release</button>
 <button class="chip" data-type="tax_lien"><span class="ct">100</span> Tax Lien</button>
 <button class="chip" data-type="traffic_court_paper_tcp"><span class="ct">7</span> Traffic Court Paper Tcp</button>
 <button class="chip" data-type="ucc_filing"><span class="ct">7</span> Ucc Filing</button>
@@ -126,7 +126,7 @@ function render(type){
   $('#loading').style.display='none';
 }
 
-fetch('leads.json?b=1784075347').then(r=>r.json()).then(d=>{
+fetch('leads.json?b=1784075383').then(r=>r.json()).then(d=>{
   DATA=d;
   $('#kpi-total').textContent=d.total;
   $('#kpi-distress').textContent=d.distress;
