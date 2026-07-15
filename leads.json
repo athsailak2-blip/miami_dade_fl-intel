@@ -13903,6 +13903,29 @@
         "owner_name": "",
         "enrichment_status": "PARTY_NATIVE",
         "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
+      },
+      {
+        "source": "miami_dade_clerk_official_records",
+        "source_id": "2026R464497",
+        "county": "Miami-Dade",
+        "state": "FL",
+        "lead_type": "judgment",
+        "is_distress": true,
+        "document_type": "JUDGMENT - JUD",
+        "recorded_date": "7/8/2026",
+        "rec_book_page": "35388/546",
+        "plat_book_page": "",
+        "legal_description": "",
+        "block_number": "",
+        "misc_ref": "",
+        "folio": "",
+        "party_name": "CARTER JUANITA L / AUTOVEST LLC",
+        "grantor": "CARTER JUANITA L",
+        "grantee": "AUTOVEST LLC",
+        "street_address": "",
+        "owner_name": "",
+        "enrichment_status": "PARTY_NATIVE",
+        "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
       }
     ],
     "judgment_satisfaction": [
@@ -21712,6 +21735,29 @@
         "owner_name": "",
         "enrichment_status": "PARTY_NATIVE",
         "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
+      },
+      {
+        "source": "miami_dade_clerk_official_records",
+        "source_id": "2026R463788",
+        "county": "Miami-Dade",
+        "state": "FL",
+        "lead_type": "notice_not",
+        "is_distress": false,
+        "document_type": "NOTICE - NOT",
+        "recorded_date": "7/8/2026",
+        "rec_book_page": "35387/2614",
+        "plat_book_page": "",
+        "legal_description": "",
+        "block_number": "",
+        "misc_ref": "BB25134980-10190",
+        "folio": "",
+        "party_name": "ROBERTSON MEN FIRST EVAN CH / MIAMI CITY OF",
+        "grantor": "ROBERTSON MEN FIRST EVAN CH",
+        "grantee": "MIAMI CITY OF",
+        "street_address": "",
+        "owner_name": "",
+        "enrichment_status": "PARTY_NATIVE",
+        "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
       }
     ],
     "power_of_attorney_pay": [
@@ -21963,6 +22009,29 @@
         "party_name": "CAMPBELL LILLIAN / KNIGHT TROY",
         "grantor": "CAMPBELL LILLIAN",
         "grantee": "KNIGHT TROY",
+        "street_address": "",
+        "owner_name": "",
+        "enrichment_status": "PARTY_NATIVE",
+        "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
+      },
+      {
+        "source": "miami_dade_clerk_official_records",
+        "source_id": "2026R464987",
+        "county": "Miami-Dade",
+        "state": "FL",
+        "lead_type": "power_of_attorney_pay",
+        "is_distress": false,
+        "document_type": "POWER OF ATTORNEY - PAY",
+        "recorded_date": "7/9/2026",
+        "rec_book_page": "35388/2602",
+        "plat_book_page": "",
+        "legal_description": "",
+        "block_number": "",
+        "misc_ref": "",
+        "folio": "",
+        "party_name": "MITCHELL NICHOLAS / BTNH ADVISORS LLC",
+        "grantor": "MITCHELL NICHOLAS",
+        "grantee": "BTNH ADVISORS LLC",
         "street_address": "",
         "owner_name": "",
         "enrichment_status": "PARTY_NATIVE",
@@ -29145,6 +29214,29 @@
         "owner_name": "",
         "enrichment_status": "PARTY_NATIVE",
         "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
+      },
+      {
+        "source": "miami_dade_clerk_official_records",
+        "source_id": "2026R463686",
+        "county": "Miami-Dade",
+        "state": "FL",
+        "lead_type": "ucc_filing",
+        "is_distress": false,
+        "document_type": "FINANCING STATEMENT UCC - FST",
+        "recorded_date": "7/8/2026",
+        "rec_book_page": "35387/2310",
+        "plat_book_page": "",
+        "legal_description": "",
+        "block_number": "",
+        "misc_ref": "TERMINATION",
+        "folio": "",
+        "party_name": "ROBERTS JOANNE / FX2 TWG HI FINANCE CO I LLC",
+        "grantor": "ROBERTS JOANNE",
+        "grantee": "FX2 TWG HI FINANCE CO I LLC",
+        "street_address": "",
+        "owner_name": "",
+        "enrichment_status": "PARTY_NATIVE",
+        "detail_url": "https://onlineservices.miamidadeclerk.gov/officialrecords/SearchResults?qs="
       }
     ]
   },
@@ -29809,11 +29901,11 @@
       "status"
     ]
   ],
-  "total": 3369,
-  "distress": 195,
+  "total": 3390,
+  "distress": 198,
   "enriched": 0,
-  "address_complete_pct": 14.2,
-  "owner_or_party_pct": 81.6,
+  "address_complete_pct": 14.1,
+  "owner_or_party_pct": 81.7,
   "window_note": "7-day rolling window; data sourced via TinyFish + PA ArcGIS",
-  "generated_at": "2026-07-15T00:37:07.415098"
+  "generated_at": "2026-07-15T00:38:10.926255"
 }
