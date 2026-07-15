@@ -51,7 +51,7 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <div class="chips" id="chips">
 <button class="chip active" data-type="__all">All</button>
 <button class="chip" data-type="affidavit"><span class="ct">100</span> Affidavit</button>
-<button class="chip" data-type="agreement"><span class="ct">27</span> Agreement</button>
+<button class="chip" data-type="agreement"><span class="ct">28</span> Agreement</button>
 <button class="chip" data-type="articles_of_incorporation_ain"><span class="ct">3</span> Articles Of Incorporation Ain</button>
 <button class="chip" data-type="assignment"><span class="ct">9</span> Assignment</button>
 <button class="chip" data-type="bankruptcy"><span class="ct">1</span> Bankruptcy</button>
@@ -60,7 +60,7 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <button class="chip" data-type="consent_con"><span class="ct">1</span> Consent Con</button>
 <button class="chip" data-type="construction_notice"><span class="ct">80</span> Construction Notice</button>
 <button class="chip" data-type="court_order"><span class="ct">3</span> Court Order</button>
-<button class="chip" data-type="criminal_court_paper_ccp"><span class="ct">69</span> Criminal Court Paper Ccp</button>
+<button class="chip" data-type="criminal_court_paper_ccp"><span class="ct">71</span> Criminal Court Paper Ccp</button>
 <button class="chip" data-type="dade_court_paper_dcp"><span class="ct">100</span> Dade Court Paper Dcp</button>
 <button class="chip" data-type="death_certificate_(est_of)_dce"><span class="ct">15</span> Death Certificate (Est Of) Dce</button>
 <button class="chip" data-type="declaration_of_residence_dor"><span class="ct">5</span> Declaration Of Residence Dor</button>
@@ -126,7 +126,7 @@ function render(type){
   $('#loading').style.display='none';
 }
 
-fetch('leads.json?b=1784075319').then(r=>r.json()).then(d=>{
+fetch('leads.json?b=1784075347').then(r=>r.json()).then(d=>{
   DATA=d;
   $('#kpi-total').textContent=d.total;
   $('#kpi-distress').textContent=d.distress;
