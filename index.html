@@ -74,7 +74,7 @@ th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size
 <button class="chip" data-type="mortgage_assignment"><span class="ct">60</span> Mortgage Assignment</button>
 <button class="chip" data-type="mortgage_satisfaction"><span class="ct">100</span> Mortgage Satisfaction</button>
 <button class="chip" data-type="notice_not"><span class="ct">25</span> Notice Not</button>
-<button class="chip" data-type="power_of_attorney_pay"><span class="ct">9</span> Power Of Attorney Pay</button>
+<button class="chip" data-type="power_of_attorney_pay"><span class="ct">10</span> Power Of Attorney Pay</button>
 <button class="chip" data-type="recent_parcel_change"><span class="ct">100</span> Recent Parcel Change</button>
 <button class="chip" data-type="release"><span class="ct">100</span> Release</button>
 <button class="chip" data-type="tax_lien"><span class="ct">100</span> Tax Lien</button>
@@ -126,7 +126,7 @@ function render(type){
   $('#loading').style.display='none';
 }
 
-fetch('leads.json?b=1784075722').then(r=>r.json()).then(d=>{
+fetch('leads.json?b=1784075764').then(r=>r.json()).then(d=>{
   DATA=d;
   $('#kpi-total').textContent=d.total;
   $('#kpi-distress').textContent=d.distress;
