@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Miami-Dade, FL — Distress Leads</title>
+<style>
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;margin:0;background:#0f1419;color:#e6e6e6}
+header{background:linear-gradient(135deg,#16202c 0%,#1a2738 100%);padding:18px 18px;border-bottom:2px solid #2dd4bf}
+h1{margin:0;font-size:20px;color:#2dd4bf;font-weight:700} .meta{color:#8aa;font-size:12px;margin-top:6px}
+.cards{display:flex;gap:10px;flex-wrap:wrap;padding:14px 18px}
+.card{background:#16202c;border:1px solid #243;border-radius:10px;padding:10px 14px;min-width:120px;flex:1}
+.card .n{font-size:22px;font-weight:700;color:#2dd4bf} .card .l{font-size:11px;color:#8aa;text-transform:uppercase;letter-spacing:.5px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;padding:12px 18px;border-top:1px solid #223}
+.chip{background:#16202c;color:#9fe;border:1px solid #243;border-radius:18px;padding:6px 12px;font-size:12px;cursor:pointer}
+.chip.active{background:#134e4a;color:#5eead4;border-color:#2dd4bf}
+.chip .ct{background:#0f1419;color:#2dd4bf;border-radius:10px;padding:1px 6px;font-size:11px;margin-right:4px}
+.wrap{padding:0 16px 30px}
+table{width:100%;border-collapse:collapse;font-size:12px;table-layout:auto}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid #223;vertical-align:top}
+th{color:#8aa;font-weight:600;position:sticky;top:0;background:#0f1419;font-size:11px;text-transform:uppercase}
+.owner{color:#fbbf24;font-weight:600} .addr{color:#e6e6e6}
+.na{color:#566} .doc{color:#a78bfa;font-size:11px;font-weight:600}
+.tag{font-size:10px;padding:2px 6px;border-radius:6px;background:#243;color:#9fe;display:inline-block}
+.tag.ENRICHED,.tag.PARTY_NATIVE,.tag.ADDRESS_NATIVE{background:#134e4a;color:#5eead4}
+.tag.UNENRICHED,.tag.NO_PARTY{background:#422;color:#fbbf24}
+.tag.DISTRESS{background:#7f1d1d;color:#fca5a5}
+.footer{padding:14px 18px;color:#567;font-size:11px;border-top:1px solid #223}
+#loading{padding:40px;text-align:center;color:#8aa}
+@media (max-width:720px){
+  table thead{display:none}
+  table,table tbody,table tr,table td{display:block;width:100%}
+  table tr{background:#16202c;margin-bottom:10px;border-radius:8px;padding:8px;border:1px solid #243}
+  table td{border-bottom:none;padding:4px 0}
+  table td::before{content:attr(data-label);font-size:10px;color:#8aa;text-transform:uppercase;display:block;margin-bottom:2px;font-weight:600}
+  .cards .card{min-width:100px}
+}
+</style></head>
+<body>
+<header>
+<h1>Miami-Dade, FL — Distress Leads</h1>
+<div class="meta" id="meta">Loading...</div>
+</header>
+<div class="cards">
+<div class="card"><div class="n" id="kpi-total">0</div><div class="l">Total</div></div>
+<div class="card"><div class="n" id="kpi-distress">0</div><div class="l">Distress</div></div>
+<div class="card"><div class="n" id="kpi-enriched">0</div><div class="l">Enriched (owner)</div></div>
+<div class="card"><div class="n" id="kpi-owner">0%</div><div class="l">Owner/Party %</div></div>
+<div class="card"><div class="n" id="kpi-addr">0%</div><div class="l">Address Complete</div></div>
+</div>
+<div class="chips" id="chips">
+<button class="chip active" data-type="__all">All</button>
+<button class="chip" data-type="affidavit"><span class="ct">61</span> Affidavit</button>
+<button class="chip" data-type="agreement"><span class="ct">9</span> Agreement</button>
+<button class="chip" data-type="articles_of_incorporation_ain"><span class="ct">1</span> Articles Of Incorporation Ain</button>
+<button class="chip" data-type="assignment"><span class="ct">3</span> Assignment</button>
+<button class="chip" data-type="certificate_of_title_cti"><span class="ct">1</span> Certificate Of Title Cti</button>
+<button class="chip" data-type="consent_con"><span class="ct">1</span> Consent Con</button>
+<button class="chip" data-type="construction_notice"><span class="ct">23</span> Construction Notice</button>
+<button class="chip" data-type="criminal_court_paper_ccp"><span class="ct">29</span> Criminal Court Paper Ccp</button>
+<button class="chip" data-type="dade_court_paper_dcp"><span class="ct">100</span> Dade Court Paper Dcp</button>
+<button class="chip" data-type="death_certificate_(est_of)_dce"><span class="ct">3</span> Death Certificate (Est Of) Dce</button>
+<button class="chip" data-type="declaration_of_residence_dor"><span class="ct">2</span> Declaration Of Residence Dor</button>
+<button class="chip" data-type="deed"><span class="ct">100</span> Deed</button>
+<button class="chip" data-type="judgment"><span class="ct">7</span> Judgment</button>
+<button class="chip" data-type="judgment_satisfaction"><span class="ct">10</span> Judgment Satisfaction</button>
+<button class="chip" data-type="lis_pendens"><span class="ct">9</span> Lis Pendens</button>
+<button class="chip" data-type="mortgage"><span class="ct">84</span> Mortgage</button>
+<button class="chip" data-type="mortgage_assignment"><span class="ct">20</span> Mortgage Assignment</button>
+<button class="chip" data-type="mortgage_satisfaction"><span class="ct">32</span> Mortgage Satisfaction</button>
+<button class="chip" data-type="notice_not"><span class="ct">9</span> Notice Not</button>
+<button class="chip" data-type="power_of_attorney_pay"><span class="ct">5</span> Power Of Attorney Pay</button>
+<button class="chip" data-type="recent_parcel_change"><span class="ct">100</span> Recent Parcel Change</button>
+<button class="chip" data-type="release"><span class="ct">27</span> Release</button>
+<button class="chip" data-type="tax_lien"><span class="ct">38</span> Tax Lien</button>
+<button class="chip" data-type="traffic_court_paper_tcp"><span class="ct">3</span> Traffic Court Paper Tcp</button>
+<button class="chip" data-type="ucc_filing"><span class="ct">4</span> Ucc Filing</button>
+</div>
+<div class="wrap" id="tablewrap">
+<div id="loading">Loading leads…</div>
+<table id="t" style="display:none">
+<thead><tr id="hdr"></tr></thead>
+<tbody id="body"></tbody>
+</table>
+</div>
+<div class="footer">
+Sourced from Miami-Dade Clerk Official Records · Miami-Dade Property Appraiser · ArcGIS<br>
+Generated by MiamiDade Hermes agent · <a href="leads.json" style="color:#2dd4bf">View raw leads.json</a>
+</div>
+<script>
+let DATA=null;
+const $ = (s)=>document.querySelector(s);
+const esc = (s)=>{return String(s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);};
+
+function render(type){
+  const schema = (DATA.schemas && DATA.schemas[type]) || DATA.default_schema;
+  const rows = type==='__all' ? [].concat(...Object.values(DATA.by_type)) : (DATA.by_type[type]||[]);
+  $('#hdr').innerHTML = schema.map(c=>`<th>${c[1]}</th>`).join('');
+  const tbody = $('#body');
+  tbody.innerHTML = rows.slice(0,200).map(r=>{
+    const cells = schema.map(c=>{
+      const k=c[0], kind=c[2];
+      let v = r[k] || '';
+      if(k==='owner_name'||k==='party_name'||k==='grantor'||k==='grantee'){
+        if(v) return `<td data-label="${c[1]}" class="owner">${esc(v)}</td>`;
+        return `<td data-label="${c[1]}" class="na">—</td>`;
+      }
+      if(k==='street_address'||k==='enriched_address'){
+        if(v) return `<td data-label="${c[1]}" class="addr">${esc(v)}</td>`;
+        return `<td data-label="${c[1]}" class="na">—</td>`;
+      }
+      if(kind==='status'){
+        const v2 = r.enrichment_status || v;
+        return `<td data-label="${c[1]}"><span class="tag ${esc(v2)}">${esc(v2||'—')}</span></td>`;
+      }
+      return `<td data-label="${c[1]}">${esc(v)}</td>`;
+    }).join('');
+    return `<tr>${cells}</tr>`;
+  }).join('');
+  $('#t').style.display='';
+  $('#loading').style.display='none';
+}
+
+fetch('leads.json?b=1784074930').then(r=>r.json()).then(d=>{
+  DATA=d;
+  $('#kpi-total').textContent=d.total;
+  $('#kpi-distress').textContent=d.distress;
+  $('#kpi-enriched').textContent=d.enriched;
+  $('#kpi-owner').textContent=(d.owner_or_party_pct||0)+'%';
+  $('#kpi-addr').textContent=(d.address_complete_pct||0)+'%';
+  $('#meta').innerHTML = `Generated ${d.generated_at} · ${d.window_note||''} · ${Object.keys(d.by_type).length} lead types`;
+  render('__all');
+}).catch(e=>{
+  $('#loading').textContent='Failed to load: '+e;
+});
+
+document.querySelectorAll('#chips .chip').forEach(b=>{
+  b.onclick=()=>{
+    document.querySelectorAll('#chips .chip').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    render(b.dataset.type);
+  };
+});
+</script>
+</body>
+</html>
